@@ -7,12 +7,18 @@
   </head>
   <body>
 
-<div class="container">
-  <span class="text1">Welcome to</span>
-  <span class="text2">Syracuse's Finest</span>
-</div>
+      <div class="container">
+          <span class="text1">Welcome to</span>
+          <span class="text2">Syracuse's Finest</span>
+      </div>
+
+      var $text = "ocean"
 
 
+
+      #ui
+      - for (i = 0; i < 26; i++)
+      .text #{$text}
 
   </body>
 </html>

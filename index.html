@@ -3,42 +3,72 @@
 
 <head>
     <title>Syracuse Bionics Laboratory</title>
-
 </head>
 
 <style>
 
     body {
-        background: rgb(58, 58, 58);
+        background: rgb(202, 202, 202); /* body and section match */
         margin: 0px;
         padding: 0px;
         color: bisque;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 100%;
     }
 
     header {
-        background: rgb(19, 18, 18);
+        padding: 0px;
+
+    }
+
+    ul {    
+        background :rgb(241, 241, 241); /* match with footer */
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+
+    li {
+        background: rgb(235, 235, 235);
         color: rgb(30, 171, 253);
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: Arial;
+        font-size: 140%;
+        margin: 30px;
+        display: inline-block;
+    }
+
+    h1 {
+        color: rgb(240, 132, 132);
+        padding: 20px;
+        font-size: 150%;
         text-align: center;
+
     }
 
     section {
-        background: rgb(209, 209, 209);
+        background: rgb(202, 202, 202);
         color: rgb(0, 0, 0);
         font-family: 'century gothic';
-    }
-
-    footer {
-        background: rgb(19, 18, 18);
-        color: rgb(209, 209, 209);
-        text-align: center;
-        padding: 20px;
-        margin: 0px 10px;
+        display: flex;
+        flex-direction: row;
     }
 
     div {
-    background: red;
+    background: white;
+    margin: auto;
+    padding: 20% 22%;
+    height: 10px;
+    width: 50px;
+    }
+
+    footer {
+        background: rgb(235, 235, 235);
+        color: rgb(116, 116, 116);
+        font-family: 'century gothic';
+        text-align: right;
+        padding: 20px;
+        margin: 0px 10px;
     }
 
     button {
@@ -51,24 +81,28 @@
 <!--background="starry dock.jpg" width="3072" height="1728"-->
 
 <body>
-    <header>Jeff Houston</header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Projects</li>
+                <li>About Me</li>
+                <li>Hello World</li>
+            </ul>
+        </nav>
+        <h1><img src="fake picture.jpg" width="1008" height="756"></h1>
+    </header>
 
     <section>
         <div>part 1</div>
         <div>part 2</div>
     </section>
-    <section>item 2</section>
-    <footer>footer</footer>
 
+    <section>
+        item
+    </section>
 
-    <!--ul>
-        <li>Home</li>
-        <li>Projects</li>
-        <li>About</li>
-        <li>Contacts</li>
-        <li>Search</li>
-    </ul-->
-
+    <footer>created by jeff houston</footer>
 
     <!--table border="0" align="right">
         <tr>

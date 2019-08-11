@@ -1,63 +1,62 @@
 
-
     body {
-        background: rgb(51, 51, 51); /* body and section match */
-        margin: 0px;
+        background: rgb(255, 255, 255); /* FULL BACKGROUND COLOR */
         padding: 0px;
-        color: rgb(14, 14, 14);
+        margin: 0px;
+        color: rgb(0, 0, 0);
         font-family: 'Source Code Pro', sans-serif;
-        font-size: 100%;
     }
+
 
     header {
+        background: rgb(235, 235, 235); /* SET TO MATCH FOOTER BACKGROUND */
+        text-align: center;
         padding: 0px 0px;
         margin: 0px 0px;
-    }
-    
-
-    .nav {
-        background :rgb(241, 241, 241); /* match with footer */
-        padding: 0px 0px;
-        margin: 0px 0px;
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-    }
-
-  nav li {
-        background: rgb(190, 226, 27);
-        color: rgb(30, 171, 253);
-        margin: 0px;
-        padding: 20px 60px;
-        font-family: "century gothic";
-        font-size: 130%;
-        text-transform: uppercase;
-        display: inline-block;
     }
 
     nav ul {
-      color: black;
-      padding: 20px 30px;
-      flex: 1;
-      line-height: 1.2;
-      text-decoration: none;
-      background-position: 0 -0.1em;
-      background-size: 0 100%;
-      background-repeat: no-repeat;
-      transition: all ease-in-out 0.3s;
+        padding: 0px;
+        margin: 0px;
     }
+
+    nav li {
+        display: inline-block;
+        margin-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        position: relative;
+    }
+
+    nav a {
+        color: black;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        font-family: "century gothic";
+        font-size: 100%;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: 3.5px;
+        background: linear-gradient(to right, rgb(17, 81, 255) 0%, rgb(12, 215, 230) 100%);
+        position: absolute;
+        width: 0%;
+        bottom: 0;
+        transition: all ease-in-out 0.18s;
+    }
+
+    nav a:hover::before {
+        color: rgb(117, 117, 117);
+        width: 100%;
+    }
+
+
     
-    nav a:hover {
-      color: rgb(224, 224, 224);
-      background-size: 100% 100%;
-    }
-
-
-
-
-
-
-    h2 {
+    .top-image {
         color: rgb(77, 77, 77);
         padding: 20px;
         font-size: 150%;

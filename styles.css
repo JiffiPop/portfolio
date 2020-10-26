@@ -1,52 +1,134 @@
-
-    body {
-        background: rgb(255, 255, 255); /* FULL BACKGROUND COLOR */
+/* overall background */
+    body {      
+        background: rgb(255, 255, 255);
         padding: 0px;
         margin: 0px;
         color: rgb(0, 0, 0);
         font-family: 'Source Code Pro', sans-serif;
     }
 
-
-    header {
-        background: rgb(235, 235, 235); /* SET TO MATCH FOOTER BACKGROUND */
-        text-align: center;
+/* top bar */
+    header {        
+        /* text-align: center; */
         padding: 0px 0px;
         margin: 0px 0px;
     }
 
-    nav ul {
+@font-face {
+    font-family: planet-kosmos;
+    src: url(fonts/Planet-Kosmos.TTF);
+    }
+
+@font-face {
+    font-family: forma;
+    src: url(fonts/forma.ttf);
+    }
+
+@font-face {
+    font-family: quantum;
+    src: url(fonts/Quantum.otf);
+    }
+    
+@font-face {
+    font-family: IBM-Plex-Sans;
+    src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf);
+    }
+    
+
+/* color of header & footer */
+    header, footer {        
+        background: rgb(255, 255, 255);     
+    }
+
+/* ensure no padding on navigation bar */
+    nav ul {        
         padding: 0px;
         margin: 0px;
     }
-
-    nav li {
+    
+/* navigation bar items */
+    nav li {        
         display: inline-block;
-        margin-right: 20px;
+        /* margin-right: 20px;
         padding-top: 20px;
-        padding-bottom: 25px;
+        padding-bottom: 20px; */
         position: relative;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    .menu {
+        padding-left: 40px;
+    }
+
+/*    nav {
+         height: absolute; 
+    }   */
+    
+    /* squish ONLY both sides towards middle */
+    .menu {
+        display: flex;
+        height: inherit;
+        align-items: center;
+        padding: 10px 100px;
+    }
+
+    /* squish both sides AND INDIVIDUAL HREF's towards middle */
+    .menu li {
+        padding: 0px 10px;
+    }
+    .menu a {
+        color: rgb(44, 44, 44);
+    }
+
+    .logo {
+        flex: 1;
+        font-size: 22px;
+    }
+
+    .logo a {
+        font-family: planet-kosmos,sans-serif;
+    }
+
+    .links {
+        font-size: 14px;
+    }
+
+    /* only req'd for using image as logo */
+    /* .logo img {
+        max-width:260px;
+        width: auto;
+        height: auto;
+    } */
+
+    nav a:hover {
+        color: rgb(144, 147, 163);
+        transition: color 0.2s;
     }
 
     nav a {
         color: black;
-        padding-top: 20px;
-        padding-bottom: 25px;
-        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        /* padding-top: 20px; */
+        /* padding-bottom: 20px; */
+        /* font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; */
+        font-family: IBM-Plex-Sans;
         font-size: 100%;
         text-transform: uppercase;
         text-decoration: none;
+        transition: color 0.3s;
     }
-
+/* 
     nav a::before {
         content: '';
         display: block;
         height: 3.5px;
-        background: linear-gradient(to right, rgb(17, 81, 255) 0%, rgb(12, 215, 230) 100%);
+        background: rgb(0, 126, 158);
         position: absolute;
         width: 0%;
-        bottom: 0;
-        transition: all ease-in-out 0.18s;
+        bottom: -12px;
+        transition: all ease-in-out 0.2s;
     }
 
     nav a:hover::before {
@@ -54,18 +136,29 @@
         width: 100%;
     }
 
+    nav a:hover {
+        color: rgb(0, 126, 158)
+    }
+     */
 
-    
     .top-image {
         color: rgb(77, 77, 77);
-        padding: 20px;
+        padding: 0px;
         font-size: 150%;
         text-align: center;
     }
 
+    .top-image img {
+        display: grid;
+        max-width: 3446px;
+        max-height: 1288px;
+        width: 100%;
+        height: auto;
+    }
+
     section.feature-box.split-sides {
         color: rgb(0, 0, 0);
-        font-family: 'century gothic';
+        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         display: flex;
         flex-direction: row;
     }
@@ -79,9 +172,8 @@
         }
 
     footer {
-        background: rgb(235, 235, 235);
         color: rgb(116, 116, 116);
-        font-family: 'century gothic';
+        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         text-align: right;
         padding: 20px 20px 20px 0px;
         margin: 40px 10px 0px 10px;

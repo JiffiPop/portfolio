@@ -1,3 +1,22 @@
+
+/* import font families */
+@font-face {
+    font-family: planet-kosmos;
+    src: url(fonts/Planet-Kosmos.TTF);
+    }
+@font-face {
+    font-family: forma;
+    src: url(fonts/forma.ttf);
+    }
+@font-face {
+    font-family: quantum;
+    src: url(fonts/Quantum.otf);
+    }
+@font-face {
+    font-family: IBM-Plex-Sans;
+    src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf);
+    }
+
 /* overall background */
     body {      
         background: rgb(255, 255, 255);
@@ -7,93 +26,100 @@
         font-family: 'Source Code Pro', sans-serif;
     }
 
-/* top bar */
-    header {        
-        /* text-align: center; */
+/* NAV BAR STARTS */
+
+/* ensure no padding on navigation bar */
+    header {
         padding: 0px 0px;
         margin: 0px 0px;
     }
 
-@font-face {
-    font-family: planet-kosmos;
-    src: url(fonts/Planet-Kosmos.TTF);
-    }
-
-@font-face {
-    font-family: forma;
-    src: url(fonts/forma.ttf);
-    }
-
-@font-face {
-    font-family: quantum;
-    src: url(fonts/Quantum.otf);
-    }
-    
-@font-face {
-    font-family: IBM-Plex-Sans;
-    src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf);
-    }
-    
-
 /* color of header & footer */
-    header, footer {        
+    header, footer {
         background: rgb(255, 255, 255);     
     }
 
-/* ensure no padding on navigation bar */
-    nav ul {        
-        padding: 0px;
-        margin: 0px;
+    nav ul {
+        margin: 0px 0px;
+        padding: 0px 0px;
+        list-style-type: none;
+        display: flex;
+        height: inherit;
+    }
+
+    nav ul.logo {
+        float: left;
+    }
+
+    nav ul.links {
+        float: right;
     }
     
 /* navigation bar items */
-    nav li {        
-        display: inline-block;
-        /* margin-right: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px; */
+    nav ul li {
+        /* display: inline-block; */
         position: relative;
+        padding: 0px 0px;
+        list-style: none;
     }
 
-    ul {
-        list-style-type: none;
+    nav ul li a {
+        color: black;
+        /* background: saddlebrown; */
+        font-family: IBM-Plex-Sans;
+            /* font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; */
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        list-style: none;   
+            /* width of drop menu & links*/  
+        display: block;
+        transition: color 0.3s;
+        padding: 20px 40px 20px 20px;
     }
 
-    .menu {
-        padding-left: 40px;
+    nav ul li ul {
+        display: none;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        /* vertical distance between first dropdown menu item and link */
     }
 
-/*    nav {
-         height: absolute; 
-    }   */
-    
-    /* squish ONLY both sides towards middle */
-    .menu {
-        display: flex;
-        height: inherit;
-        align-items: center;
-        padding: 10px 100px;
+    nav ul li:hover ul {
+        display: inline-block;
     }
 
-    /* squish both sides AND INDIVIDUAL HREF's towards middle */
-    .menu li {
-        padding: 0px 10px;
+    nav ul li ul li {
+        width: 160px;
     }
-    .menu a {
-        color: rgb(44, 44, 44);
+
+    nav ul li ul li a {
+        padding: 12px 20px;
+            /* vertical distance between dropdown menu items, horizontal distance of dd menu items from sides */
+    }
+
+    nav ul li ul li a:hover {
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+ 
+    nav ul li a:hover {
+        color: rgb(131, 135, 158);
+        transition: color 0.2s;
     }
 
     .logo {
-        flex: 1;
-        font-size: 22px;
+        flex: 0.8;
+        /* padding-right: 10%; */
+        padding: 0px 100px;
+        padding-left: 10%;
     }
 
     .logo a {
         font-family: planet-kosmos,sans-serif;
-    }
-
-    .links {
-        font-size: 14px;
+        font-size: 22px;
+        width: 304px;
+        padding: 11px 10px;
     }
 
     /* only req'd for using image as logo */
@@ -103,43 +129,8 @@
         height: auto;
     } */
 
-    nav a:hover {
-        color: rgb(144, 147, 163);
-        transition: color 0.2s;
-    }
+/* NAV BAR ENDS */
 
-    nav a {
-        color: black;
-        /* padding-top: 20px; */
-        /* padding-bottom: 20px; */
-        /* font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; */
-        font-family: IBM-Plex-Sans;
-        font-size: 100%;
-        text-transform: uppercase;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-/* 
-    nav a::before {
-        content: '';
-        display: block;
-        height: 3.5px;
-        background: rgb(0, 126, 158);
-        position: absolute;
-        width: 0%;
-        bottom: -12px;
-        transition: all ease-in-out 0.2s;
-    }
-
-    nav a:hover::before {
-        color: rgb(117, 117, 117);
-        width: 100%;
-    }
-
-    nav a:hover {
-        color: rgb(0, 126, 158)
-    }
-     */
 
     .top-image {
         color: rgb(77, 77, 77);

@@ -13,8 +13,12 @@
     src: url(fonts/Quantum.otf);
     }
 @font-face {
-    font-family: IBM-Plex-Sans;
+    font-family: IBM-Plex-Sans-Medium;
     src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf);
+    }
+@font-face {
+    font-family: IBM-Plex-Sans-Regular;
+    src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf);
     }
 
 /* overall background */
@@ -66,7 +70,7 @@
     nav ul li a {
         color: black;
         /* background: saddlebrown; */
-        font-family: IBM-Plex-Sans;
+        font-family: IBM-Plex-Sans-Medium;
             /* font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; */
         font-size: 14px;
         text-transform: uppercase;
@@ -147,6 +151,21 @@
         height: auto;
     }
 
+    section.juicy-content {
+        background: rgb(235, 235, 235);
+        width: 60%;
+        height: auto;
+        padding: 2%;
+        /* font-family: 'Source Code Pro', sans-serif; */
+        font-family: IBM-Plex-Sans-Regular;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .center {
+        margin: auto;
+    }
+
     section.feature-box.split-sides {
         color: rgb(0, 0, 0);
         font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
@@ -157,7 +176,7 @@
     section.feature-box.split-sides div {
         background: white;
         margin: 0px;
-        padding: 20% 22%;
+        /* padding: 20% 22%; */
         height: 10px;
         width: 50px;
         }

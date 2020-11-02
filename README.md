@@ -1,2 +1,2 @@
-# cusebionicslab
-syracuse's finest bionics and controls laboratory
+# portfolio
+portfolio feat. the work of Jeffrey Houston

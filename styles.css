@@ -17,8 +17,20 @@
     src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf);
     }
 @font-face {
+    font-family: IBM-Plex-Sans-MediumItalic;
+    src: url(fonts/IBM_Plex_Sans/IBMPlexSans-MediumItalic.ttf);
+    }
+@font-face {
     font-family: IBM-Plex-Sans-Regular;
     src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf);
+    }
+@font-face {
+    font-family: IBM-Plex-Sans-Bold;
+    src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf);
+    }
+@font-face {
+    font-family: IBM-Plex-Sans-BoldItalic;
+    src: url(fonts/IBM_Plex_Sans/IBMPlexSans-BoldItalic.ttf);
     }
 
 /* overall background */
@@ -116,7 +128,8 @@
         flex: 0.8;
         /* padding-right: 10%; */
         padding: 0px 100px;
-        padding-left: 10%;
+        padding-left: 10%;  
+            /* padding-left matches .title class */
     }
 
     .logo a {
@@ -135,58 +148,104 @@
 
 /* NAV BAR ENDS */
 
-
-    .top-image {
+/* UNUSED FIXED IMAGE */
+    /* .top-image {
         color: rgb(77, 77, 77);
         padding: 0px;
-        font-size: 150%;
-        text-align: center;
     }
-
     .top-image img {
         display: grid;
         max-width: 3446px;
         max-height: 1288px;
         width: 100%;
         height: auto;
+    } */
+    /* use with this HTML:
+        <section class="image top-image">
+            <img src="images/jupiter.jpg" width="3446" height="1288">
+        </section>
+     */
+    /* section.title { */
+        /* background: linear-gradient(145deg,rgb(0, 0, 0) 35%, rgb(133, 133, 133)); */
+        /* color: white; */
+        /* width: 100%; */
+        /* height: auto; */
+        /* padding: 10%; */
+        /* padding-left: 10%; */
+            /* padding-left matches .title class */
+        /* font-family: IBM-Plex-Sans-Medium, 'Source Code Pro', sans-serif; */
+        /* font-size: 80px; */
+    /* } */
+
+
+    section.top-image {
+        height: 500px;
+        width: auto;
+        max-width: 3446px;
+        max-height: 1288px;
+        /* parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+
+    section.title {
+        color: white;
+        height: auto;
+        padding: 16%;
+        padding-left: 10%;
+            /* padding-left matches .title class */
+        font-family: IBM-Plex-Sans-Medium, 'Source Code Pro', sans-serif;
+        font-size: 80px;
+    }
+
 
     section.juicy-content {
         background: rgb(235, 235, 235);
         width: 60%;
         height: auto;
+        margin-top: 10px;
         padding: 2%;
         /* font-family: 'Source Code Pro', sans-serif; */
         font-family: IBM-Plex-Sans-Regular;
         font-size: 16px;
-        margin-top: 10px;
+        text-align: justify;
     }
 
     .center {
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    section.feature-box.split-sides {
+    .subtitle {
+        font-size: 14px;
+        color: rgb(102, 123, 148);
+        font-family: IBM-Plex-Sans-BoldItalic;
+        text-align: center;
+    }
+
+/* UNUSED SIDE-BY-SIDE BLOCKS */
+    /* section.feature-box.split-sides {
         color: rgb(0, 0, 0);
         font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         display: flex;
         flex-direction: row;
     }
-
     section.feature-box.split-sides div {
         background: white;
         margin: 0px;
-        /* padding: 20% 22%; */
+            padding: 20% 22%;
         height: 10px;
         width: 50px;
-        }
+        } */
 
     footer {
         color: rgb(116, 116, 116);
         font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         text-align: right;
         padding: 20px 20px 20px 0px;
-        margin: 40px 10px 0px 10px;
+        margin: 20px 10px 0px 10px;
     }
 
 

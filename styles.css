@@ -148,6 +148,7 @@
 
 /* NAV BAR ENDS */
 
+
 /* UNUSED FIXED IMAGE */
     /* .top-image {
         color: rgb(77, 77, 77);
@@ -176,6 +177,7 @@
         /* font-family: IBM-Plex-Sans-Medium, 'Source Code Pro', sans-serif; */
         /* font-size: 80px; */
     /* } */
+    /* UNUSED FIXED IMAGE END */
 
 
     section.top-image {
@@ -196,7 +198,7 @@
         padding: 16%;
         padding-left: 10%;
             /* padding-left matches .title class */
-        font-family: IBM-Plex-Sans-Medium, 'Source Code Pro', sans-serif;
+        font-family: IBM-Plex-Sans-Medium,'Source Code Pro',sans-serif;
         font-size: 80px;
     }
 
@@ -208,9 +210,10 @@
         margin-top: 10px;
         padding: 2%;
         /* font-family: 'Source Code Pro', sans-serif; */
-        font-family: IBM-Plex-Sans-Regular;
+        font-family: IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
         font-size: 16px;
         text-align: justify;
+        box-shadow: 0px 0px 14px rgb(211, 214, 218);
     }
 
     .center {
@@ -221,7 +224,7 @@
     .subtitle {
         font-size: 14px;
         color: rgb(102, 123, 148);
-        font-family: IBM-Plex-Sans-BoldItalic;
+        font-family: IBM-Plex-Sans-BoldItalic,'Source Code Pro',sans-serif;
         text-align: center;
     }
 
@@ -239,6 +242,7 @@
         height: 10px;
         width: 50px;
         } */
+
 
     footer {
         color: rgb(116, 116, 116);

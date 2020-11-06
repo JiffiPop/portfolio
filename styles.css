@@ -5,14 +5,6 @@
     src: url(fonts/Planet-Kosmos.TTF);
     }
 @font-face {
-    font-family: forma;
-    src: url(fonts/forma.ttf);
-    }
-@font-face {
-    font-family: quantum;
-    src: url(fonts/Quantum.otf);
-    }
-@font-face {
     font-family: IBM-Plex-Sans-Medium;
     src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf);
     }
@@ -25,6 +17,10 @@
     src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf);
     }
 @font-face {
+    font-family: IBM-Plex-Sans-Italic;
+    src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Italic.ttf);
+    }
+@font-face {
     font-family: IBM-Plex-Sans-Bold;
     src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf);
     }
@@ -32,6 +28,15 @@
     font-family: IBM-Plex-Sans-BoldItalic;
     src: url(fonts/IBM_Plex_Sans/IBMPlexSans-BoldItalic.ttf);
     }
+@font-face {
+    font-family: IBM-Plex-Sans-ExtraLight;
+    src: url(fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLight.ttf);
+    }
+@font-face {
+    font-family: IBM-Plex-Sans-Light;
+    src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Light.ttf);
+    }
+
 
 /* overall background */
     body {      
@@ -133,7 +138,7 @@
     }
 
     .logo a {
-        font-family: planet-kosmos,sans-serif;
+        font-family: planet-kosmos,IBM-Plex-Sans-Medium,sans-serif;
         font-size: 22px;
         width: 304px;
         padding: 11px 10px;
@@ -179,41 +184,41 @@
     /* } */
     /* UNUSED FIXED IMAGE END */
 
-
-    section.top-image {
-        height: 500px;
-        width: auto;
-        max-width: 3446px;
-        max-height: 1288px;
+    section.top-image-title {
+        max-width: 100%;
+        height: auto;
         /* parallax scrolling effect */
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-    }
-
-    section.title {
         color: white;
-        height: auto;
+        /* height: auto; */
         padding: 16%;
         padding-left: 10%;
             /* padding-left matches .title class */
         font-family: IBM-Plex-Sans-Medium,'Source Code Pro',sans-serif;
+        font-weight: 1000;
         font-size: 80px;
     }
-
 
     section.juicy-content {
         background: rgb(235, 235, 235);
         width: 60%;
         height: auto;
         margin-top: 10px;
-        padding: 2%;
+        padding: 2% 2%;
         /* font-family: 'Source Code Pro', sans-serif; */
         font-family: IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
         font-size: 16px;
         text-align: justify;
-        box-shadow: 0px 0px 14px rgb(211, 214, 218);
+        box-shadow: 0px 0px 14px rgb(174, 177, 180);
+    }
+
+    h1 {
+        text-align: left;
+        font-family: IBM-Plex-Sans-Medium,'Source Code Pro',sans-serif;
+        font-weight: 200;
     }
 
     .center {
@@ -223,9 +228,13 @@
 
     .subtitle {
         font-size: 14px;
-        color: rgb(102, 123, 148);
+        color: rgb(82, 90, 97);
         font-family: IBM-Plex-Sans-BoldItalic,'Source Code Pro',sans-serif;
         text-align: center;
+    }
+
+    .subtitle-text {
+        font-family: IBM-Plex-Sans-MediumItalic,'Source Code Pro',sans-serif;
     }
 
 /* UNUSED SIDE-BY-SIDE BLOCKS */

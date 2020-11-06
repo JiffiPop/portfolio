@@ -3,11 +3,15 @@ REFERENCES
 https://codepen.io/mikegolus/pen/MBRKyB
 https://www.youtube.com/watch?v=rgUp302f_lY
 https://www.w3schools.com/howto/howto_css_parallax.asp
+https://www.quora.com/How-do-you-insert-an-invisible-character-in-HTML
+https://stackoverflow.com/questions/36679649/how-to-add-a-color-overlay-to-a-background-image
 
 IMAGES:
 https://www.space.com/39487-juno-pictures-reveal-jupiter-stripes.html
 https://www.nasa.gov/image-feature/plutos-blue-sky
 https://solarsystem.nasa.gov/resources/925/solar-system-and-beyond-poster-set/
 https://syr.joinhandshake.com/
+https://2u.com/partners/syracuse-university/
+
 
 -->

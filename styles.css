@@ -205,14 +205,14 @@
     section.juicy-content {
         background: rgb(235, 235, 235);
         width: 60%;
-        min-width: 600px;
+        min-width: 300px;
         height: auto;
         margin-top: 10px;
         padding: 2% 2%;
         /* font-family: 'Source Code Pro', sans-serif; */
         font-family: IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
         font-size: 16px;
-        text-align: justify;
+        /* text-align: justify; */
         box-shadow: 0px 0px 14px rgb(174, 177, 180);
     }
 

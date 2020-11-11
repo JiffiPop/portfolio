@@ -205,7 +205,23 @@
         font-size: 80px;
     }
 
-
+    @media only screen and (max-width: 1200px) {
+    section.top-image-title {
+        max-width: 100%;
+        height: auto;
+        /* parallax scrolling effect */
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 16%;
+        padding-left: 10%;
+            /* padding-left matches .title class */
+        font-family: IBM-Plex-Sans-Medium,'Source Code Pro',sans-serif;
+        font-weight: 1000;
+        font-size: 60px;
+    }
+    }
 
 
     section.juicy-content {
@@ -284,7 +300,6 @@
     /* color of header & footer */
         header, footer {
             background: rgb(255, 255, 255);
-            text-align: center;
         }
 
         header {
@@ -334,6 +349,6 @@
                 /* align drop down text to left */
         }
         /* MOBILE NAV BAR END */
-    }
+}
     /* MOBILE COMPATABILITY END */
     /* //////////////////////////////////////////// */

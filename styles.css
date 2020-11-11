@@ -212,7 +212,9 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            font-size: 60px;
+            font-size: 10vw;
+            padding: 16vw;
+            padding-left: 8vw;
         }
     }
 

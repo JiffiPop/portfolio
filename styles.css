@@ -47,13 +47,15 @@
         font-family: 'Source Code Pro', sans-serif;
     }
 
+/* //////////////////////////////////////////// */
+/* //////////////////////////////////////////// */
 /* NAV BAR STARTS */
 
 /* ensure no padding on navigation bar */
-    header {
+    /* header {
         padding: 0px 0px;
         margin: 0px 0px;
-    }
+    } */
 
 /* color of header & footer */
     header, footer {
@@ -152,7 +154,8 @@
     } */
 
 /* NAV BAR ENDS */
-
+/* //////////////////////////////////////////// */
+/* //////////////////////////////////////////// */
 
 /* UNUSED FIXED IMAGE */
     /* .top-image {
@@ -202,14 +205,18 @@
         font-size: 80px;
     }
 
+
+
+
     section.juicy-content {
         background: rgb(235, 235, 235);
-        width: 60%;
-        min-width: 300px;
+        /* width: 60%;
+        min-width: 300px; */
+        width: 90%;
+        max-width: 1200px;
         height: auto;
         margin-top: 10px;
         padding: 2% 2%;
-        /* font-family: 'Source Code Pro', sans-serif; */
         font-family: IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
         font-size: 16px;
         /* text-align: justify; */
@@ -268,4 +275,61 @@
     }
 
 
+/* //////////////////////////////////////////// */
+/* MOBILE COMPATABILITY START */
+@media only screen and (max-width: 900px) {
 
+    /* MOBILE NAV BAR START */
+    
+    /* color of header & footer */
+        header, footer {
+            background: rgb(255, 255, 255);
+            text-align: center;
+        }
+    
+        nav ul {
+            display: inline-block;
+        }
+    
+    /* navigation bar items */
+    
+    
+        nav ul li {
+            text-align: left;
+            /* keeps dropdown menu under hover link */
+            margin: 0px 0px 0px 0px;
+        }
+    
+        nav ul li.links {
+            display: inline-block;
+        }
+    
+        nav ul li.logo {
+            padding: 0px;
+        }
+    
+        nav ul li a{
+            padding: 0px;
+            text-align: left;
+        }
+    
+        nav ul li.logo a {
+            margin: auto !important;
+            /* padding: 0px; */
+        }
+    
+        nav ul li.links a {
+            padding: 20px 40px 20px 20px;
+    
+        }
+    
+        nav ul li ul li a {
+            padding: 12px 20px !important;
+                /* vertical distance between dropdown menu items, horizontal distance of dd menu items from sides */
+            text-align: left;
+                /* align drop down text to left */
+        }
+        /* MOBILE NAV BAR END */
+    }
+    /* MOBILE COMPATABILITY END */
+    /* //////////////////////////////////////////// */

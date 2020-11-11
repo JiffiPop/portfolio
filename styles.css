@@ -207,8 +207,6 @@
 
     @media only screen and (max-width: 1200px) {
         section.top-image-title {
-            max-width: 600px;
-            height: auto;
             /* eliminate parallax scrolling effect */
             background-attachment: scroll;
             background-position: center;

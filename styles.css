@@ -94,7 +94,7 @@
         font-size: 14px;
         text-transform: uppercase;
         text-decoration: none;
-        list-style: none;   
+        list-style: none;
             /* width of drop menu & links*/  
         display: block;
         transition: color 0.3s;
@@ -113,7 +113,8 @@
     }
 
     nav ul li ul li {
-        width: 160px;
+        width: 165px;
+        /* width of dropdown menu items */
     }
 
     nav ul li ul li a {
@@ -196,7 +197,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
-        /* height: auto; */
         padding: 16%;
         padding-left: 10%;
             /* padding-left matches .title class */
@@ -233,6 +233,12 @@
         font-size: 18px;
         /* text-align: justify; */
         box-shadow: 0px 0px 14px rgb(174, 177, 180);
+    }
+
+    .heading-jobtitle {
+        font-family: IBM-Plex-Sans-MediumItalic,'Source Code Pro',sans-serif;
+        font-size: smaller;
+        color: rgb(82, 90, 97);
     }
 
     .portfolio-image {

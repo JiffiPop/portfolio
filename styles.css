@@ -1,10 +1,6 @@
 
 /* import font families */
 @font-face {
-    font-family: planet-kosmos;
-    src: url(fonts/Planet-Kosmos.TTF);
-    }
-@font-face {
     font-family: IBM-Plex-Sans-Medium;
     src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf);
     }
@@ -38,17 +34,14 @@
     }
 
 @font-face {
-    font-family: Uni-Sans-Heavy;
-    src: url(fonts/Uni\ Sans\ Heavy.otf);
+    font-family: planet-kosmos;
+    src: url(fonts/Planet-Kosmos.TTF);
     }
 @font-face {
-    font-family: Uni-Sans-Heavy-Italic;
-    src: url(fonts/Uni\ Sans\ Heavy\ Italic.otf);
+    font-family: youre-gone-it;
+    src: url(fonts/youre\ gone\ it.ttf);
     }
-@font-face {
-    font-family: Uni-Sans-Thin-Italic;
-    src: url(fonts/Uni\ Sans\ Thin\ Italic.otf);
-    }
+
 
 /* overall background */
     body {      
@@ -154,16 +147,17 @@
     }
 
     nav ul li.logo a:hover {
-        color: rgb(255, 153, 0);
-        /* background: linear-gradient(90deg, rgb(0,0,0),rgb(7, 73, 255)); */
+        color: rgb(0, 195, 255);
+        font-weight: bolder;
         transition: 0.2s;
     }
 
     .logo a {
-        font-family: Uni-Sans-Heavy-Italic,IBM-Plex-Sans-Regular,sans-serif;
+        font-family: youre-gone-it, IBM-Plex-Sans-Regular, sans-serif;
         font-size: 28px;
-        font-weight: bold;
-        width: 328px;
+        font-weight: normal;
+        /* font-weight: bold; */
+        width: 350px;
         padding: 12px 10px;
     }
 

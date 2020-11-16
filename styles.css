@@ -37,6 +37,18 @@
     src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Light.ttf);
     }
 
+@font-face {
+    font-family: Uni-Sans-Heavy;
+    src: url(fonts/Uni\ Sans\ Heavy.otf);
+    }
+@font-face {
+    font-family: Uni-Sans-Heavy-Italic;
+    src: url(fonts/Uni\ Sans\ Heavy\ Italic.otf);
+    }
+@font-face {
+    font-family: Uni-Sans-Thin-Italic;
+    src: url(fonts/Uni\ Sans\ Thin\ Italic.otf);
+    }
 
 /* overall background */
     body {      
@@ -89,7 +101,8 @@
     nav ul li a {
         color: black;
         /* background: saddlebrown; */
-        font-family: IBM-Plex-Sans-Medium;
+        font-family: IBM-Plex-Sans-Regular;
+        font-weight: 600;
             /* font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; */
         font-size: 14px;
         text-transform: uppercase;
@@ -140,11 +153,18 @@
             /* padding-left matches .title class */
     }
 
+    nav ul li.logo a:hover {
+        color: rgb(255, 153, 0);
+        /* background: linear-gradient(90deg, rgb(0,0,0),rgb(7, 73, 255)); */
+        transition: 0.2s;
+    }
+
     .logo a {
-        font-family: planet-kosmos,IBM-Plex-Sans-Medium,sans-serif;
-        font-size: 22px;
-        width: 304px;
-        padding: 11px 10px;
+        font-family: Uni-Sans-Heavy-Italic,IBM-Plex-Sans-Regular,sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        width: 328px;
+        padding: 12px 10px;
     }
 
     /* only req'd for using image as logo */
@@ -200,7 +220,7 @@
         padding: 16%;
         padding-left: 10%;
             /* padding-left matches .title class */
-        font-family: IBM-Plex-Sans-Medium,'Source Code Pro',sans-serif;
+        font-family: IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
         font-weight: 1000;
         font-size: 80px;
     }
@@ -240,12 +260,6 @@
         }
     }
 
-    .heading-jobtitle {
-        font-family: IBM-Plex-Sans-MediumItalic,'Source Code Pro',sans-serif;
-        font-size: smaller;
-        color: rgb(82, 90, 97);
-    }
-
     .portfolio-image {
         width: 100%;
         display: block;
@@ -254,7 +268,15 @@
     h1 {
         text-align: left;
         font-family: IBM-Plex-Sans-Medium,'Source Code Pro',sans-serif;
-        font-weight: 200;
+        font-weight: 800;
+        color: rgb(61, 68, 73);
+    }
+
+    .heading-jobtitle {
+        font-family: IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
+        font-weight: 600;
+        font-size: smaller;
+        color: rgb(105, 115, 124);
     }
 
     .center {

@@ -119,7 +119,12 @@
     }
 
     nav ul li ul li {
-        width: 165px;
+        width: 220px;
+        /* width of dropdown menu items */
+    }
+
+    nav ul li ul.resumes li {
+        width: 140px;
         /* width of dropdown menu items */
     }
 
@@ -147,16 +152,15 @@
     }
 
     nav ul li.logo a:hover {
-        color: rgb(0, 195, 255);
+        color: rgb(131, 135, 158);
         font-weight: bolder;
-        text-shadow: 2px 2px rgb(131, 135, 158);
+        text-shadow: 2px 2px rgb(0, 195, 255);
         transition: 0.2s;
     }
 
     .logo a {
         font-family: youre-gone-it, IBM-Plex-Sans-Regular, sans-serif;
         color: rgb(0, 0, 0);
-        text-shadow: 2px 2px rgb(0, 195, 255);
         font-size: 28px;
         font-weight: normal;
         /* font-weight: bold; */

@@ -34,14 +34,35 @@
     }
 
 @font-face {
-    font-family: planet-kosmos;
-    src: url(fonts/Planet-Kosmos.TTF);
-    }
-@font-face {
-    font-family: youre-gone-it;
-    src: url(fonts/youre\ gone\ it.ttf);
+    font-family: Uni-Sans-Heavy-Italic;
+    src: url(fonts/Uni_Sans/Uni\ Sans\ Heavy\ Italic.otf);
     }
 
+/* @font-face {
+    font-family: Uni-Sans-Heavy;
+    src: url(fonts/Uni_Sans/Uni\ Sans\ Heavy.otf);
+    } */
+@font-face {
+    font-family: Uni-Sans-Thin;
+    src: url(fonts/Uni_Sans/Uni\ Sans\ Thin.otf);
+    }
+@font-face {
+    font-family: Uni-Sans-Thin-Italic;
+    src: url(fonts/Uni_Sans/Uni\ Sans\ Thin\ Italic.otf);
+    }
+
+@font-face {
+    font-family: Squad-Regular;
+    src: url(fonts/Squad-Regular.otf);
+    }
+@font-face {
+    font-family: Panton-Black;
+    src: url(fonts/Panton/PantonDemo-Black.otf);
+    }
+@font-face {
+    font-family: Panton-Light;
+    src: url(fonts/Panton/PantonDemo-Light.otf);
+    }
 
 /* overall background */
     body {      
@@ -62,9 +83,23 @@
         margin: 0px 0px;
     } */
 
-/* color of header & footer */
-    header, footer {
-        background: rgb(255, 255, 255);     
+    header {
+        background: rgb(255, 255, 255);   
+    }
+
+    footer {
+        background: rgb(0, 0, 0);
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    @media only screen and (max-width: 1200px) {
+        header {
+            position: relative;
+            width: 100%;
+        }
     }
 
     nav ul {
@@ -107,6 +142,11 @@
         padding: 20px 40px 20px 20px;
     }
 
+    nav ul li a:hover {
+        color: rgb(131, 135, 158);
+        transition: color 0.2s;
+    }
+
     nav ul li ul {
         display: none;
         position: absolute;
@@ -137,11 +177,6 @@
         background: rgb(0, 0, 0);
         color: rgb(255, 255, 255);
     }
- 
-    nav ul li a:hover {
-        color: rgb(131, 135, 158);
-        transition: color 0.2s;
-    }
 
     .logo {
         flex: 0.8;
@@ -152,20 +187,21 @@
     }
 
     nav ul li.logo a:hover {
-        color: rgb(131, 135, 158);
-        font-weight: bolder;
-        text-shadow: 2px 2px rgb(0, 195, 255);
-        transition: 0.2s;
+        color: rgb(232, 234, 252);
+        font-weight: bold;
+        text-shadow: 4px 4px rgba(0,0,0,0.2);
+        transition: color 0.2s, text-shadow 0.2s, font-weight 0.2s;
     }
 
     .logo a {
-        font-family: youre-gone-it, IBM-Plex-Sans-Regular, sans-serif;
+        font-family: Uni-Sans-Heavy-Italic, IBM-Plex-Sans-Regular, sans-serif;
         color: rgb(0, 0, 0);
+        /* text-shadow: 2px 2px rgba(0,0,0,0.2); */
         font-size: 28px;
         font-weight: normal;
-        /* font-weight: bold; */
         width: 350px;
         padding: 12px 10px;
+        transition: color 0.4s, text-shadow 0.2s, font-weight 0.2s;
     }
 
     /* only req'd for using image as logo */
@@ -221,11 +257,31 @@
         padding: 16%;
         padding-left: 10%;
             /* padding-left matches .title class */
-        font-family: IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
-        font-weight: 1000;
+        font-family: 'Panton-Light','Source Code Pro',sans-serif;
         font-size: 80px;
+
     }
 
+    section.no-quote {
+        padding: 22%;
+        padding-left: 10%;
+    }
+
+    .quote {
+        padding-top: 16%;
+        text-align: right;
+        font-family: Uni-Sans-Thin-Italic, IBM-Plex-Sans-Italic,'Squad-Regular';
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    .quote-person {
+        font-family: Uni-Sans-Thin, IBM-Plex-Sans-Regular !important;
+        padding-top: 0%;
+        padding-right: 100px;
+        font-size: 24px;
+    }
+    
     @media only screen and (max-width: 1200px) {
         section.top-image-title {
             /* eliminate parallax scrolling effect */
@@ -237,7 +293,15 @@
             padding: 16vw;
             padding-left: 4vw;
         }
+
+        .quote {
+            font-size: 4vw;
+        }
+        .quote-person {
+            font-size: 2vw;
+        }
     }
+
 
 
     section.juicy-content {
@@ -248,9 +312,10 @@
         width: 90%;
         max-width: 1200px;
         height: auto;
-        margin-top: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         padding: 2% 2%;
-        font-family: IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
+        font-family: Squad-Regular,'Source Code Pro',sans-serif;
         font-size: 18px;
         /* text-align: justify; */
         box-shadow: 0px 0px 14px rgb(174, 177, 180);
@@ -296,30 +361,51 @@
         font-family: IBM-Plex-Sans-MediumItalic,'Source Code Pro',sans-serif;
     }
 
-/* UNUSED SIDE-BY-SIDE BLOCKS */
-    /* section.feature-box.split-sides {
-        color: rgb(0, 0, 0);
-        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    .side-content {
         display: flex;
         flex-direction: row;
     }
-    section.feature-box.split-sides div {
-        background: white;
-        margin: 0px;
-            padding: 20% 22%;
-        height: 10px;
-        width: 50px;
-        } */
 
-
-    footer {
-        color: rgb(116, 116, 116);
-        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-        text-align: right;
-        padding: 20px 20px 20px 0px;
-        margin: 20px 10px 0px 10px;
+    .side-content div {
+        width: 100%;
+        margin: auto;
     }
 
+    .side-content div.left-section {
+        padding-right: 60px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .side-content {
+            display: block;
+        }
+        .side-content div.left-section {
+            padding-right: 0px;
+        }
+    }
+
+    footer {
+        color: rgb(224, 224, 224);
+        font-family: IBM-Plex-Sans-Light,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        text-align: right;
+        padding: 20px 80px 20px 0px;
+        font-size: 20px;
+    }
+
+    footer p a:link, footer p a:visited {
+        color: rgb(160, 160, 160);
+        text-decoration: none;
+    }
+
+    footer p a:hover {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    footer p a:active {
+        color: rgb(66, 66, 66);
+        text-decoration: none;
+    }
 
 /* //////////////////////////////////////////// */
 /* MOBILE COMPATABILITY START */
@@ -328,9 +414,6 @@
     /* MOBILE NAV BAR START */
     
     /* color of header & footer */
-        header, footer {
-            background: rgb(255, 255, 255);
-        }
         
         footer {
             font-size: smaller;

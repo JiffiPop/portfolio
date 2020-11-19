@@ -336,13 +336,27 @@
         font-family: IBM-Plex-Sans-Medium,'Source Code Pro',sans-serif;
         font-weight: 800;
         color: rgb(61, 68, 73);
+        padding-bottom: 0px !important;
     }
 
-    .heading-jobtitle {
+    /* .heading-jobtitle {
         font-family: IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
         font-weight: 600;
         font-size: smaller;
         color: rgb(105, 115, 124);
+    } */
+
+    h2 {
+        font-family: IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        color: rgb(105, 115, 124);
+        padding-top: 0px !important;
+    }
+
+    h3 {
+        font-family: IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
+        font-weight: 600;
     }
 
     .center {
@@ -368,7 +382,6 @@
 
     .side-content div {
         width: 100%;
-        margin: auto;
     }
 
     .side-content div.left-section {

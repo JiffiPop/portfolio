@@ -39,7 +39,7 @@
     <section class = "top-image-title">
         <style>
             section.top-image-title {
-                background-image: url(images/IMG_1719-cropped.jpeg);
+                background-image: linear-gradient(0deg, rgba(138, 138, 138, 0.0),rgba(0, 0, 0, 0.4)), url(images/scenic/nyc-day-cropped.JPG);
                 /* background-image: linear-gradient(0deg, rgb(211, 15, 15),rgb(10, 14, 240)); */
             }
         </style>
@@ -47,68 +47,14 @@
     </section>
 
     <section class = "juicy-content center">
-            <div class="form">
-                <form id="myform" name="myform" action="contact-form-handler.php" method="post">
-                    <label>Name</label>
-                    <input type="text" name="name" id="name" />  
+            <div class="contact">
+                <h1>CONTACT INFO</h1>
+                    <p><h2><span>LinkedIn:&nbsp; </span><span><a href="https://www.linkedin.com/in/jeffreyalanhouston/">linkedin.com/in/jeffreyalanhouston/</a></span></h2></p>
+                    <p><h2><span>Email:&nbsp; </span><span><a href="mailto:jehousto@syr.edu">jehousto@syr.edu</a></span></h2></p>
+                    <p><h2><span>Phone:&nbsp; </span><span><a href="tel:+1 (908) 432-9369">+1 (908) 432-9369</a></span></h2></p>
 
-                    <label>E-mail</label>
-                    <input type="text" name="email" id="email" />
-                    
-                    <label>Phone</label>
-                    <input type="text" name="phone" id="phone" />
-                    
-                    <label>Message</label>
-                    <textarea name="message" rows="5" cols="60"></textarea>
-                    
-                    <button name="send" type="submit">send</button>
-                    <button name="reset" type="reset">reset</button>
-                    <div class="spacer"></div>
-                </form>
             </div>
     </section>
-
-
-
-    <!-- <form id="contact-form" method="POST" action="contact-form-handler.php">
-
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="">
-
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="">
-
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" style="height:200px"></textarea>
-
-      <input type="submit" class="submit" value="SUBMIT">
-    </form> -->
-
-    <!-- <?php
-    $name = $_POST['name'];
-    $visitor_email = $_POST['email'];
-    $message = $_POST['message'];
-
-    $email_from = 'jeffrey@jeff.com';
-    $email_subject = "New Email from Portfolio"
-    $email_body = "User Name:  $name.\n".
-                    "User Email:  $visitor_email.\n".
-                        "User Message:  $message.\n";
-    $to = "jehousto@syr.edu";
-    $headers = "From:  $email_from \r\n";
-    $headers .= "Reply-to:  $visitor_email \r\n";
-
-    mail($to,$email_subject,$email_body,$headers);
-    header("Location: contact.html");
-?>
-
- -->
-
-
-
-
-
 
 <!-- footer start -->
 <footer>

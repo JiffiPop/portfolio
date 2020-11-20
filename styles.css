@@ -382,68 +382,32 @@
     .side-content {
         display: flex;
         flex-direction: row;
+        padding-top: 10px;
     }
 
     .side-content div {
         width: 100%;
     }
 
-    .side-content div.left-section {
-        padding-right: 60px;
+    .left-section {
+        padding-right: 10px;
     }
 
     .right-section {
-        margin: auto;
+        padding-left: 10px;
+
     }
 
     @media only screen and (max-width: 1200px) {
         .side-content {
             display: block;
+            padding-top: 0px;
         }
-        .side-content div.left-section {
+        .side-content div {
             padding-right: 0px;
+
         }
     }
-
-
-/* FORM START */
-
-.form {
-    border: 1px solid #262223;
-    margin: 0 auto;
-    padding: 14px;
-    width: 375px;
-
-}
-
-.form label {
-    display: block;
-    text-align: right;
-    width: 80px;
-    float: left;
-}
-
-.form input {
-    float: left;
-    font-size: 12px;
-    padding: 4px 2px;
-    border: 1px solid #262223;
-    width: 270px;
-    margin: 2px 0 10px 10px;
-}
-
-textarea {
-    float: left;
-    font-size: 12px;
-    padding: 4px 2px;
-    border: 1px solid #262223;
-    width: 270px;
-    margin: 2px 0 20px 10px;
-}
-
-/* FORM END */
-
-
 
     footer {
         color: rgb(224, 224, 224);
@@ -463,10 +427,19 @@ textarea {
         text-decoration: none;
     }
 
-    footer p a:active {
+    footer p a:active, .contact a:link, .contact a:visited {
         color: rgb(66, 66, 66);
         text-decoration: none;
     }
+
+    .contact a:hover {
+        color: rgb(0, 0, 0, 0.5);
+    }
+
+    .contact a:active {
+        color: rgb(0, 0, 0, 0.3);
+    }
+
 
 /* //////////////////////////////////////////// */
 /* MOBILE COMPATABILITY START */

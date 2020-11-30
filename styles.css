@@ -63,6 +63,11 @@
     font-family: Panton-Light;
     src: url(fonts/Panton/PantonDemo-Light.otf);
     }
+@font-face {
+    font-family: Helvetica-Black-Oblique;
+    src: url(fonts/Helvetica-Black-Oblique.woff);
+    }
+    
 
 /* overall background */
     body {      
@@ -128,7 +133,6 @@
 
     nav ul li a {
         color: black;
-        /* background: saddlebrown; */
         font-family: IBM-Plex-Sans-Regular;
         font-weight: 600;
             /* font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; */
@@ -136,10 +140,10 @@
         text-transform: uppercase;
         text-decoration: none;
         list-style: none;
-            /* width of drop menu & links*/  
+
         display: block;
         transition: color 0.3s;
-        padding: 20px 40px 20px 20px;
+        padding: 20px 40px 20px 20px;            /* width of drop menu & links*/  
     }
 
     nav ul li a:hover {
@@ -187,21 +191,22 @@
     }
 
     nav ul li.logo a:hover {
-        color: rgb(232, 234, 252);
+        color: rgb(236, 240, 241);
         font-weight: bold;
         text-shadow: 4px 4px rgba(0,0,0,0.2);
-        transition: color 0.2s, text-shadow 0.2s, font-weight 0.2s;
+        transition: color 0.15s, text-shadow 0.15s, font-weight 0.15s;
     }
 
     .logo a {
-        font-family: Uni-Sans-Heavy-Italic, IBM-Plex-Sans-Regular, sans-serif;
+        font-family: 'Helvetica-Black-Oblique';
         color: rgb(0, 0, 0);
         /* text-shadow: 2px 2px rgba(0,0,0,0.2); */
         font-size: 28px;
-        font-weight: normal;
-        width: 350px;
-        padding: 12px 10px;
-        transition: color 0.4s, text-shadow 0.2s, font-weight 0.2s;
+        text-transform: none;
+        width: 290px;
+        padding: 11px 10px;
+        transition: color 0.3s, text-shadow 0.15s, font-weight 0.15s;
+        letter-spacing: -2px;
     }
 
     /* only req'd for using image as logo */

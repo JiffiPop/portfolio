@@ -200,7 +200,6 @@
     .logo a {
         font-family: 'Helvetica-Black-Oblique';
         color: rgb(0, 0, 0);
-        /* text-shadow: 2px 2px rgba(0,0,0,0.2); */
         font-size: 28px;
         text-transform: none;
         width: 290px;
@@ -327,7 +326,9 @@
     }
     @media only screen and (max-width: 1200px) {
         section.juicy-content {
-            padding: 2% 4%;
+            padding: 30px 20px;
+            font-size: 14px;
+            line-height: 28px;
         }
     }
 
@@ -456,6 +457,7 @@
         
         footer {
             font-size: smaller;
+            padding-right: 8vw;
         }
 
         header {
@@ -496,8 +498,8 @@
         nav ul li.links a {
             padding-top: 20px;
             padding-bottom: 20px;
-            padding-left: 2vw;
-            padding-right: 2vw;
+            padding-left: 4vw;
+            padding-right: 4vw;
         }
     
         nav ul li ul li a {
@@ -506,6 +508,14 @@
             text-align: left;
                 /* align drop down text to left */
         }
+
+        .logo a {
+        font-size: 22px;
+        width: 80vw;
+        text-align: center;
+        }
+
+
         /* MOBILE NAV BAR END */
 }
     /* MOBILE COMPATABILITY END */

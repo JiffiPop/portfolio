@@ -297,12 +297,12 @@
             padding: 16vw;
             padding-left: 4vw;
         }
-
         .quote {
             font-size: 4vw;
         }
         .quote-person {
-            font-size: 2vw;
+            font-size: 3vw;
+            padding-right: 4vw;
         }
     }
 

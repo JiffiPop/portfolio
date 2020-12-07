@@ -67,6 +67,10 @@
     font-family: Helvetica-Black-Oblique;
     src: url(fonts/Helvetica-Black-Oblique.woff);
     }
+@font-face {
+    font-family: Lego;
+    src: url(fonts/Lego.ttf);
+    }
     
 
 /* overall background */
@@ -97,7 +101,7 @@
     }
 
     header {
-        position: fixed;
+        /* position: fixed; */
         width: 100%;
     }
     @media only screen and (max-width: 1200px) {
@@ -136,7 +140,7 @@
         font-family: IBM-Plex-Sans-Regular;
         font-weight: 600;
             /* font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; */
-        font-size: 14px;
+        font-size: 13px;
         text-transform: uppercase;
         text-decoration: none;
         list-style: none;
@@ -191,7 +195,7 @@
     }
 
     nav ul li.logo a:hover {
-        color: rgb(236, 240, 241);
+        color: rgb(236, 240, 241, 1);
         font-weight: bold;
         text-shadow: 4px 4px rgba(0,0,0,0.2);
         transition: color 0.15s, text-shadow 0.15s, font-weight 0.15s;
@@ -277,6 +281,7 @@
         font-family: Uni-Sans-Thin-Italic, IBM-Plex-Sans-Italic,'Squad-Regular';
         font-size: 30px;
         font-weight: normal;
+        color: rgb(31, 31, 31);
     }
 
     .quote-person {
@@ -299,6 +304,7 @@
         }
         .quote {
             font-size: 4vw;
+            color: white;
         }
         .quote-person {
             font-size: 3vw;

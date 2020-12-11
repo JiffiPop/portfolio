@@ -34,44 +34,19 @@
     }
 
 @font-face {
-    font-family: Uni-Sans-Heavy-Italic;
-    src: url(fonts/Uni_Sans/Uni\ Sans\ Heavy\ Italic.otf);
-    }
-
-/* @font-face {
-    font-family: Uni-Sans-Heavy;
-    src: url(fonts/Uni_Sans/Uni\ Sans\ Heavy.otf);
-    } */
-@font-face {
-    font-family: Uni-Sans-Thin;
-    src: url(fonts/Uni_Sans/Uni\ Sans\ Thin.otf);
-    }
-@font-face {
-    font-family: Uni-Sans-Thin-Italic;
-    src: url(fonts/Uni_Sans/Uni\ Sans\ Thin\ Italic.otf);
-    }
-
-@font-face {
-    font-family: Squad-Regular;
-    src: url(fonts/Squad-Regular.otf);
-    }
-@font-face {
-    font-family: Panton-Black;
-    src: url(fonts/Panton/PantonDemo-Black.otf);
-    }
-@font-face {
-    font-family: Panton-Light;
-    src: url(fonts/Panton/PantonDemo-Light.otf);
-    }
-@font-face {
     font-family: Helvetica-Black-Oblique;
     src: url(fonts/Helvetica-Black-Oblique.woff);
     }
+
 @font-face {
-    font-family: Lego;
-    src: url(fonts/Lego.ttf);
+    font-family: Helvetica-Black-Oblique;
+    src: url(fonts/Mulish-Variable.ttf);
     }
-    
+
+@font-face {
+    font-family: WorkSans;
+    src: url(fonts/WorkSans-Variable.ttf);
+    }
 
 /* overall background */
     body {      
@@ -79,7 +54,7 @@
         padding: 0px;
         margin: 0px;
         color: rgb(0, 0, 0);
-        font-family: 'Source Code Pro', sans-serif;
+        font-family: WorkSans,'Source Code Pro', sans-serif;
     }
 
 /* //////////////////////////////////////////// */
@@ -104,50 +79,50 @@
         /* position: fixed; */
         width: 100%;
     }
-    @media only screen and (max-width: 1200px) {
+    /* @media only screen and (max-width: 1200px) {
         header {
             position: relative;
-            width: 100%;
         }
-    }
+    } */
 
     nav ul {
         margin: 0px 0px;
         padding: 0px 0px;
         list-style-type: none;
         display: flex;
-        height: inherit;
     }
 
     nav ul.logo {
-        float: left;
+        margin: auto;
     }
 
     nav ul.links {
+        position: absolute;
         float: right;
     }
     
 /* navigation bar items */
     nav ul li {
-        /* display: inline-block; */
+        display: inline-block;
         position: relative;
         padding: 0px 0px;
+        margin-top: auto;
+        margin-bottom: auto;
         list-style: none;
     }
 
     nav ul li a {
         color: black;
-        font-family: IBM-Plex-Sans-Regular;
+        font-family: WorkSans, IBM-Plex-Sans-Regular,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         font-weight: 600;
-            /* font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; */
-        font-size: 13px;
+        font-size: 14px;
         text-transform: uppercase;
         text-decoration: none;
         list-style: none;
-
         display: block;
         transition: color 0.3s;
-        padding: 20px 40px 20px 20px;            /* width of drop menu & links*/  
+            /* height of top link buttons   */
+            padding: 40px 20px 40px 20px;
     }
 
     nav ul li a:hover {
@@ -159,6 +134,7 @@
         display: none;
         position: absolute;
         background-color: rgb(255, 255, 255);
+        /* padding-top: 9px; */
         /* vertical distance between first dropdown menu item and link */
     }
 
@@ -187,28 +163,23 @@
     }
 
     .logo {
-        flex: 0.8;
-        /* padding-right: 10%; */
-        padding: 0px 100px;
-        padding-left: 10%;  
-            /* padding-left matches .title class */
+        flex: 0.95;
+        padding-left: 5%;
     }
 
-    nav ul li.logo a:hover {
-        color: rgb(236, 240, 241, 1);
+    /* nav ul li.logo a:hover {
+        color: rgb(75, 75, 75);
         font-weight: bold;
-        text-shadow: 4px 4px rgba(0,0,0,0.2);
-        transition: color 0.15s, text-shadow 0.15s, font-weight 0.15s;
-    }
+    } */
 
     .logo a {
+        width: fit-content;
+        padding: 22px 10px;
+        padding-right: 20px;
         font-family: 'Helvetica-Black-Oblique';
-        color: rgb(0, 0, 0);
-        font-size: 28px;
-        text-transform: none;
-        width: 290px;
-        padding: 11px 10px;
-        transition: color 0.3s, text-shadow 0.15s, font-weight 0.15s;
+        font-weight: lighter;
+        font-size: 42px;
+        font-style: italic;
         letter-spacing: -2px;
     }
 
@@ -223,51 +194,20 @@
 /* //////////////////////////////////////////// */
 /* //////////////////////////////////////////// */
 
-/* UNUSED FIXED IMAGE */
-    /* .top-image {
-        color: rgb(77, 77, 77);
-        padding: 0px;
-    }
-    .top-image img {
-        display: grid;
-        max-width: 3446px;
-        max-height: 1288px;
-        width: 100%;
-        height: auto;
-    } */
-    /* use with this HTML:
-        <section class="image top-image">
-            <img src="images/jupiter.jpg" width="3446" height="1288">
-        </section>
-     */
-    /* section.title { */
-        /* background: linear-gradient(145deg,rgb(0, 0, 0) 35%, rgb(133, 133, 133)); */
-        /* color: white; */
-        /* width: 100%; */
-        /* height: auto; */
-        /* padding: 10%; */
-        /* padding-left: 10%; */
-            /* padding-left matches .title class */
-        /* font-family: IBM-Plex-Sans-Medium, 'Source Code Pro', sans-serif; */
-        /* font-size: 80px; */
-    /* } */
-    /* UNUSED FIXED IMAGE END */
-
     section.top-image-title {
         max-width: 100%;
         height: auto;
-        /* parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+            /* parallax scrolling effect */
+            /* background-attachment: fixed; */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         color: white;
         padding: 16%;
         padding-left: 10%;
-            /* padding-left matches .title class */
-        font-family: IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
+        font-family: WorkSans, IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
         font-size: 80px;
-
+        font-weight: 700;
     }
 
     section.no-quote {
@@ -278,14 +218,16 @@
     .quote {
         padding-top: 16%;
         text-align: right;
-        font-family: Uni-Sans-Thin-Italic, IBM-Plex-Sans-Italic,'Squad-Regular';
+        font-family: WorkSans, IBM-Plex-Sans-Italic,'Squad-Regular';
+        font-style: italic;
         font-size: 30px;
-        font-weight: normal;
-        color: rgb(31, 31, 31);
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+
     }
 
     .quote-person {
-        font-family: Uni-Sans-Thin, IBM-Plex-Sans-Regular !important;
+        font-family: WorkSans, IBM-Plex-Sans-Regular !important;
         padding-top: 0%;
         padding-right: 100px;
         font-size: 24px;
@@ -315,18 +257,17 @@
 
 
     section.juicy-content {
-        background: rgb(255, 255, 255);
+        background-color: rgb(245, 245, 245);
+        font-family: WorkSans, IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        
         width: 90%;
         max-width: 1200px;
         height: auto;
         margin-top: 20px;
         margin-bottom: 20px;
         padding: 20px 20px;
-        font-family: Squad-Regular,'Source Code Pro',sans-serif;
-        font-size: 18px;
-        line-height: 32px;
-        /* text-align: justify; */
-        box-shadow: 0px 0px 14px rgb(174, 177, 180);
     }
     @media only screen and (max-width: 1200px) {
         section.juicy-content {
@@ -344,14 +285,14 @@
 
     h1 {
         text-align: left;
-        font-family: IBM-Plex-Sans-Medium,'Source Code Pro',sans-serif;
+        font-family: WorkSans, IBM-Plex-Sans-Medium,'Source Code Pro',sans-serif;
         font-weight: 800;
         color: rgb(61, 68, 73);
         margin: 0px;
     }
 
     h2 {
-        font-family: IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
+        font-family: WorkSans, IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
         font-weight: 600;
         font-size: 20px;
         color: rgb(105, 115, 124);
@@ -361,7 +302,7 @@
 
     h3 {
         text-align: left;
-        font-family: IBM-Plex-Sans-Medium,'Source Code Pro',sans-serif;
+        font-family: WorkSans, IBM-Plex-Sans-Medium,'Source Code Pro',sans-serif;
         font-weight: 800;
         font-size: larger;
         color: rgb(61, 68, 73);
@@ -384,12 +325,12 @@
     .subtitle {
         font-size: 14px;
         color: rgb(82, 90, 97);
-        font-family: IBM-Plex-Sans-BoldItalic,'Source Code Pro',sans-serif;
+        font-family: WorkSans, IBM-Plex-Sans-BoldItalic,'Source Code Pro',sans-serif;
         text-align: center;
     }
 
     .subtitle-text {
-        font-family: IBM-Plex-Sans-MediumItalic,'Source Code Pro',sans-serif;
+        font-family: WorkSans, IBM-Plex-Sans-MediumItalic,'Source Code Pro',sans-serif;
     }
 
     @media only screen and (max-width: 1200px) {
@@ -410,10 +351,12 @@
 
     .left-section {
         padding-right: 10px;
+        margin: auto;
     }
 
     .right-section {
         padding-left: 10px;
+        margin: auto;
     }
 
     @media only screen and (max-width: 1200px) {
@@ -429,7 +372,7 @@
 
     footer {
         color: rgb(224, 224, 224);
-        font-family: IBM-Plex-Sans-Light,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+        font-family: WorkSans,IBM-Plex-Sans-Light,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         text-align: right;
         padding: 20px 80px 20px 0px;
         font-size: 20px;
@@ -508,8 +451,9 @@
         }
     
         nav ul li.links a {
+            font-size: 12px;
             padding-top: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 26px;
             padding-left: 4vw;
             padding-right: 4vw;
         }
@@ -523,8 +467,8 @@
 
         .logo a {
             padding-top: 20px;
-            font-size: 22px;
-            width: 80vw;
+            font-size: 26px;
+            width: fit-content;
             text-align: center;
         }
 

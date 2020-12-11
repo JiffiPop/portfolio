@@ -216,21 +216,21 @@
     }
 
     .quote {
+        font-family: WorkSans, IBM-Plex-Sans-Italic;
+        font-size: 30px;
+        font-weight: 300;
+        color: rgb(255, 255, 255);
         padding-top: 16%;
         text-align: right;
-        font-family: WorkSans, IBM-Plex-Sans-Italic,'Squad-Regular';
-        font-style: italic;
-        font-size: 30px;
-        font-weight: 700;
-        color: rgb(255, 255, 255);
-
     }
 
     .quote-person {
         font-family: WorkSans, IBM-Plex-Sans-Regular !important;
+        font-size: 24px;
+        font-style: italic;
         padding-top: 0%;
         padding-right: 100px;
-        font-size: 24px;
+
     }
     
     @media only screen and (max-width: 1200px) {

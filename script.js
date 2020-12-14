@@ -6,12 +6,12 @@ function autoplay(run) {
     if (run && slider) {
       slider.next()
     }
-  }, 2000)
+  }, 8000)
 }
 
 var slider = new KeenSlider(sliderElement, {
   loop: true,
-  duration: 4000,
+  duration: 3000,
   dragStart: () => {
     autoplay(false)
   },

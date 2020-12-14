@@ -186,12 +186,73 @@
         letter-spacing: -2px;
     }
 
-    /* only req'd for using image as logo */
+        /* only req'd for using image as logo */
     /* .logo img {
         max-width:260px;
         width: auto;
         height: auto;
     } */
+
+@media only screen and (max-width: 1200px) {    /* MOBILE NAV BAR START */
+
+        header {
+            text-align: center;
+        }
+    
+        nav ul {
+            display: inline-block;
+        }
+    
+    /* navigation bar items */
+    
+    
+        nav ul li {
+            text-align: left;
+            /* keeps dropdown menu under hover link */
+            margin: 0px 0px 0px 0px;
+        }
+    
+        nav ul li.links {
+            display: inline-block;
+        }
+    
+        nav ul li.logo {
+            padding: 0px;
+        }
+    
+        nav ul li a{
+            padding: 0px;
+            text-align: left;
+        }
+    
+        nav ul li.logo a {
+            margin: auto !important;
+        }
+    
+        nav ul li.links a {
+            font-size: 12px;
+            padding-top: 20px;
+            padding-bottom: 26px;
+            padding-left: 4vw;
+            padding-right: 4vw;
+        }
+    
+        nav ul li ul li a {
+            padding: 12px 20px !important;
+                /* vertical distance between dropdown menu items, horizontal distance of dd menu items from sides */
+            text-align: left;
+                /* align drop down text to left */
+        }
+
+        .logo a {
+            padding-top: 20px;
+            font-size: 26px;
+            width: 90vw;
+            text-align: center;
+        }
+
+
+}        /* MOBILE NAV BAR END */
 
 /* NAV BAR ENDS */
 /* //////////////////////////////////////////// */
@@ -238,7 +299,7 @@
     
     @media only screen and (max-width: 1200px) {
         section.top-image-title {
-            /* eliminate parallax scrolling effect */
+            /* eliminate parallax scrolling effect by    background-attachment: fixed;  -->  background-attachment: scroll;*/
             background-attachment: scroll;
             background-position: center;
             background-repeat: no-repeat;
@@ -275,7 +336,6 @@
             padding: 3vh 2vh;
             font-size: 14px;
             line-height: 28px;
-            box-shadow: 0px 0px 0px;
         }
     }
 
@@ -386,29 +446,35 @@
       
       [class^="number-slide"],
       [class*=" number-slide"] {
-        background: grey;
+        background-color: rgb(245, 245, 245);
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 50px;
         color: #fff;
         font-weight: 500;
-        height: 90vh;
-        max-height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
+      }
+
+      [class^="number-slide"] img,
+      [class*=" number-slide"] img {
+        width: 100vw;
+        max-width: 100%;
+        height: auto;
       }
 
       
     footer {
         font-family: WorkSans,IBM-Plex-Sans-Light,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
         color: rgb(224, 224, 224);
+        background-color: rgb(34, 34, 34);
     }
 
     footer div.summary {
         text-align: right;
         padding-right: 3vw;
-        padding-bottom: 2vh;
+        padding-bottom: 1vh;
+        padding-top: 1vh;
+        background-color: rgb(27, 27, 27);
     }
 
     ul li {
@@ -419,22 +485,12 @@
         font-family: WorkSans,IBM-Plex-Sans-Regular,sans-serif;
         font-size: 12px;
         list-style-type: none;
+        line-height: 20px;
         display: inline-block;
         padding: 2px 10px;
         text-align: center;
-        border-right: 1px solid rgb(58, 58, 58);
+        border-right: 1px solid rgb(80, 80, 80);
     }
-@media only screen and (max-width: 1200px) {
-    footer div.summary {
-        padding-right: 0;
-        padding-bottom: 2vh;
-        text-align: center;
-    }
-    footer div.summary li {
-        font-size: 10px;
-    }
-}
-
     footer div.summary li:last-child {
         border-right: 0px;
     }
@@ -450,111 +506,50 @@
         display: inline-block;
         margin: 0px 10px;
     }
-
-    @media only screen and (max-width: 1200px) {
-        footer div.buttons {
-            padding-right: 0;
-            text-align: center;
-        }
+    footer div.buttons li:last-child {
+        margin: 0 0;
     }
 
     footer li img {
-        filter: invert(0.7);
-        max-width: 24px;
+        filter: invert(1);
+        width: 24px;
     }
 
     footer div li a img:link, footer li a img:visited {
         filter: invert(0.4);
     }
     footer div li a:link, footer div li a:visited {
-        color: rgb(160, 160, 160);
+        color: rgb(179, 179, 179);
         text-decoration: none;
     }
 
-
     footer div li a img:hover {
-        filter: invert(1);
+        filter: invert(0.6);
     }
     footer div li a:hover {
-        color: rgb(255, 255, 255);
+        color: rgb(226, 104, 82);
         text-decoration: none;
     }
 
     footer div li a img:active {
-        filter: invert(0.3);
+        filter: invert(0.25)
     }
     footer div li a:active {
-        color: rgb(94, 94, 94);
+        color: rgb(70, 70, 70);
         text-decoration: none;
     }
 
-
-@media only screen and (max-width: 1200px) {
-
-    /* MOBILE NAV BAR START */
-    
-    /* color of header & footer */
-        
-        footer {
-            font-size: smaller;
-            padding-right: 8vw;
-        }
-
-        header {
+@media only screen and (max-width: 1200px) {    /* MOBILE NAV BAR START */
+        footer div.summary {
+            padding-right: 0;
             text-align: center;
         }
-    
-        nav ul {
-            display: inline-block;
+        footer div.summary li {
+            font-size: 10px;
+            padding: 2px 1vw;
         }
-    
-    /* navigation bar items */
-    
-    
-        nav ul li {
-            text-align: left;
-            /* keeps dropdown menu under hover link */
-            margin: 0px 0px 0px 0px;
-        }
-    
-        nav ul li.links {
-            display: inline-block;
-        }
-    
-        nav ul li.logo {
-            padding: 0px;
-        }
-    
-        nav ul li a{
-            padding: 0px;
-            text-align: left;
-        }
-    
-        nav ul li.logo a {
-            margin: auto !important;
-            /* padding: 0px; */
-        }
-    
-        nav ul li.links a {
-            font-size: 12px;
-            padding-top: 20px;
-            padding-bottom: 26px;
-            padding-left: 4vw;
-            padding-right: 4vw;
-        }
-    
-        nav ul li ul li a {
-            padding: 12px 20px !important;
-                /* vertical distance between dropdown menu items, horizontal distance of dd menu items from sides */
-            text-align: left;
-                /* align drop down text to left */
-        }
-
-        .logo a {
-            padding-top: 20px;
-            font-size: 26px;
-            width: 90vw;
+        footer div.buttons {
+            padding-right: 0;
             text-align: center;
         }
-        /* MOBILE NAV BAR END */
-    }
+    }        /* MOBILE NAV BAR END */

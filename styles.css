@@ -165,25 +165,27 @@
 
     .logo {
         flex: 0.95;
-        padding-left: 5%;
+        padding-left: 5vw;
     }
 
     nav ul li.logo a:hover {
-        color: rgb(167, 167, 167);
+        color: rgb(202, 202, 202);
     }
     nav ul li.logo a:active {
-        color: rgb(230, 230, 230);
+        color: rgba(18, 133, 228, 0.438);
     }
 
-    .logo a {
+    nav ul li.logo a {
         width: fit-content;
         padding: 22px 10px;
         padding-right: 20px;
-        font-family: 'Helvetica-Black-Oblique';
-        font-weight: lighter;
-        font-size: 42px;
-        font-style: italic;
+        text-transform: none;
+        font-family: WorkSans,'Helvetica-Black-Oblique','IBM-Plex-Sans-Light','Century Gothic','CenturyGothic','AppleGothic','sans-serif';
+        /* font-weight: 500; */
+        color: rgb(63, 70, 90);
+        font-size: 28px;
         letter-spacing: -2px;
+        transition: color 0.2s ease-out;
     }
 
         /* only req'd for using image as logo */
@@ -245,9 +247,10 @@
         }
 
         .logo a {
+            padding: 0;
             padding-top: 20px;
             font-size: 26px;
-            width: 90vw;
+            width: 100vw;
             text-align: center;
         }
 
@@ -465,8 +468,8 @@
       
     footer {
         font-family: WorkSans,IBM-Plex-Sans-Light,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-        color: rgb(224, 224, 224);
-        background-color: rgb(34, 34, 34);
+        color: rgb(0, 0, 0);
+        background-color: rgb(235, 235, 235);
     }
 
     footer div.summary {
@@ -474,7 +477,7 @@
         padding-right: 3vw;
         padding-bottom: 1vh;
         padding-top: 1vh;
-        background-color: rgb(27, 27, 27);
+        background-color: rgb(225, 225, 225);
     }
 
     ul li {
@@ -507,35 +510,62 @@
         margin: 0px 10px;
     }
     footer div.buttons li:last-child {
-        margin: 0 0;
+        margin-right: 0px;
     }
 
-    footer li img {
+    .fa {
+        margin: auto;
+        padding: 8px;
+        font-size: 20px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: black;
+        color: white;
+        /* stroke: blue;
+        stroke-width: 2px; */
+        transition: background-color 0.15s ease-out;
+    }
+    .fa:link, .fa:visited {
+        background-color: black;
+        color: white;
+    }
+    .fa:hover {
+        color: rgb(18, 133, 228);
+        background-color: rgb(235, 235, 235);
+    }
+    .fa:active {
+        background-color: rgb(202, 202, 202);
+    }
+
+    /* footer li img {
         filter: invert(1);
         width: 24px;
-    }
-
-    footer div li a img:link, footer li a img:visited {
+    } */
+    /* footer div li a img:link, footer li a img:visited {
         filter: invert(0.4);
-    }
-    footer div li a:link, footer div li a:visited {
-        color: rgb(179, 179, 179);
+    } */
+    footer div.summary li a:link, footer div.summary li a:visited {
+        color: rgb(0, 0, 0);
         text-decoration: none;
+        transition: color 0.15s ease-out;
     }
-
-    footer div li a img:hover {
+    /* footer div li a img:hover {
         filter: invert(0.6);
-    }
-    footer div li a:hover {
-        color: rgb(226, 104, 82);
+    } */
+    footer div.summary li a:hover {
+        /* color: rgb(226, 104, 82); */
+        /* color: rgb(167, 167, 167); */
+        color: rgb(18, 133, 228);
         text-decoration: none;
     }
 
-    footer div li a img:active {
+    /* footer div li a img:active {
         filter: invert(0.25)
-    }
-    footer div li a:active {
-        color: rgb(70, 70, 70);
+    } */
+    footer div.summary li a:active {
+        color: rgb(82, 82, 82);
         text-decoration: none;
     }
 

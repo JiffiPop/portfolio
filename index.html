@@ -5,10 +5,8 @@
     <title>Jeffrey A. Houston</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/keen-slider@5.3.4/keen-slider.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@5.3.4/keen-slider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>     <!-- tab label end -->
 
@@ -18,8 +16,7 @@
 <header>
     <nav>
         <ul>
-            <!-- <li class="logo"><a href="index.html"><img src="images/logo.png"></a></li> -->
-            <li class="logo"><a href="index.html">JAH</a></li>
+            <li class="logo"><a href="index.html">Jeffrey Alan Houston</a></li>
             <li class="links"><a href="#">Projects</a>
                 <ul class="projects">
                     <li><a href="starry_station.html">Starry Station</a></li>
@@ -50,35 +47,9 @@
         Welcome.
     </section> -->
 
-  <!-- <div class="carousel_slider">
-    <div id="my-keen-slider" class="keen-slider">
-        <style>.number-slide1 {background-image: url(images/senior\ design/aircraft-render-2.jpg);}</style>
-        <style>.number-slide2 {background-image: url(images/senior\ design/aircraft-render-3.jpg);}</style>
-        <style>.number-slide3 {background-image: url(images/senior\ design/aircraft-render-1.jpg);}</style>
-        <style>.number-slide4 {background-image: url(images/midi\ controller/midi-controller-exploded.jpg);}</style>
-        <style>.number-slide5 {background-image: url(images/senior\ design/fuselage-frame-1.jpg);}</style>
-        <style>.number-slide6 {background-image: url(images/starry-router/starry-router-rendering.jpg);}</style>
-      <div class="keen-slider__slide number-slide1"></div>
-      <div class="keen-slider__slide number-slide2"></div>
-      <div class="keen-slider__slide number-slide3"></div>
-      <div class="keen-slider__slide number-slide4"></div>
-      <div class="keen-slider__slide number-slide5"></div>
-      <div class="keen-slider__slide number-slide6"></div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.3.4/keen-slider.min.js"></script>
-    <script src="./script.js"></script>
-</div> -->
-
-
 <div class="carousel_slider">
   <div id="my-keen-slider" class="keen-slider">
-      <!-- <style>.number-slide1 {background-image: url(images/senior\ design/aircraft-render-2.jpg);}</style>
-      <style>.number-slide2 {background-image: url(images/senior\ design/aircraft-render-3.jpg);}</style>
-      <style>.number-slide3 {background-image: url(images/senior\ design/aircraft-render-1.jpg);}</style>
-      <style>.number-slide4 {background-image: url(images/midi\ controller/midi-controller-exploded.jpg);}</style>
-      <style>.number-slide5 {background-image: url(images/senior\ design/fuselage-frame-1.jpg);}</style>
-      <style>.number-slide6 {background-image: url(images/starry-router/starry-router-rendering.jpg);}</style> -->
-    <!-- <div class="keen-slider__slide number-slide1"><img alt="" src="images/senior\ design/aircraft-render-2.jpg" style="max-width: 800px;"></div> -->
+      <!-- <style>.number-slide1 {background-image: url(images/senior\ design/aircraft-render-2.jpg);}</style> -->
     <div class="keen-slider__slide number-slide1"><img alt="" src="images/senior design/aircraft-render-2.jpg"></div>
     <div class="keen-slider__slide number-slide2"><img alt="" src="images/senior design/aircraft-render-3.jpg"></div>
     <div class="keen-slider__slide number-slide3"><img alt="" src="images/senior design/aircraft-render-1.jpg"></div>
@@ -89,86 +60,6 @@
   <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.3.4/keen-slider.min.js"></script>
   <script src="./script.js"></script>
 </div>
-
-    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-    .mySlides {display:none}
-    .w3-left, .w3-right, .w3-badge {cursor:pointer}
-    .w3-badge {height:13px;width:13px;padding:0}
-    </style>
-    
-    <div class="w3-content w3-display-container" style="max-width:100%">
-      <img class="mySlides" src="images/senior design/aircraft-render-2-cropped.jpg" style="width:100%">
-      <img class="mySlides" src="images/senior design/aircraft-render-3.jpg" style="width:100%">
-      <img class="mySlides" src="images/senior design/aircraft-render-1.jpg" style="width:100%">
-      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-      </div>
-    </div>
-    
-    <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-    
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-    
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
-    }
-    
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white", "");
-      }
-      x[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " w3-white";
-    }
-    </script> -->
-
-
-
-    <!-- <div class="slider">
-        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
-        <input type="radio" name="slider" title="slide2" class="slider__nav"/>
-        <input type="radio" name="slider" title="slide3" class="slider__nav"/>
-        <input type="radio" name="slider" title="slide4" class="slider__nav"/>
-        <div class="slider__inner">
-          <div class="slider__contents"><i class="slider__image fa fa-codepen"></i>
-            <p class="slider__txt"><span><img class="portfolio-image" alt="Picture of Jeffrey Alan Houston" src="images/senior design/aircraft-render-2.jpg"></span></p>
-          </div>
-          <div class="slider__contents"><i class="slider__image fa fa-newspaper-o"></i>
-            <p class="slider__txt"><span><img class="portfolio-image" alt="Picture of Jeffrey Alan Houston" src="images/senior design/aircraft-render-3.jpg"></span></p>
-          </div>
-          <div class="slider__contents"><i class="slider__image fa fa-television"></i>
-            <h2 class="slider__caption">television</h2>
-            <p class="slider__txt"><span><img class="portfolio-image" alt="Picture of Jeffrey Alan Houston" src="images/senior design/aircraft-render-1.jpg"></span></p>
-          </div>
-          <div class="slider__contents"><i class="slider__image fa fa-diamond"></i>
-            <h2 class="slider__caption">diamond</h2>
-            <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
-          </div>
-        </div>
-      </div> -->
-
-
-
-
-
-
 
     <section class = "juicy-content center">
         <style>.side-content {padding-top: 0px;}</style>
@@ -194,29 +85,30 @@ These encounters inspired me to study Aerospace Engineering to further my unders
         </div>
     </section>
 
-    <!-- <section class="feature-box split-sides"> -->
-        <!-- <div>part 1</div> -->
-        <!-- <div>part 2</div> -->
-    <!-- </section> -->
-
 <!-- footer start -->
-<footer>
-    <div class="buttons">
-      <li><a href="https://github.com/jiffipop"><img src="icons/github-logo.png"></a></li><!-- 
-    --><li><a href="https://www.linkedin.com/in/jeffreyalanhouston/"><img src="icons/linkedin-logo.png"></a></li><!-- 
-    --><li><a href="mailto:jehousto@syr.edu"><img src="icons/email-logo.png"></a></li><!-- 
-    --><li><a href="tel:+1 (908) 432-9369"><img src="icons/phone-logo.png"></a></li><!-- 
---></div>
-    <div class="summary">
-      <li><a href="index.html">Home</a></li><!-- 
-    --><li><a href="starry_station.html">Starry Station</a></li><!-- 
-    --><li><a href="research.html">Exoskeleton Research</a></li><!-- 
-    --><li><a href="midi_controller.html">MIDI Controller</a></li><!-- 
-    --><li><a href="senior_design.html">Senior Design</a></li><!-- 
-    --><li><a href="curriculum.html">Curriculum</a></li><!-- 
-    --><li><a href="contact.html">Contact</a></li><!-- 
- --></div>
-</footer>
+    <footer>
+        <div class="buttons">
+            <li class="contact-button linkedin"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/jeffreyalanhouston/"></a></li><!--
+            --><li class="contact-button github"><a class="fa fa-github" href="https://github.com/jiffipop"></a></li><!-- 
+            --><li class="contact-button envelope"><a class="fa fa-envelope" href="mailto:jehousto@syr.edu"></a></li><!-- 
+            --><li class="contact-button phone"><a class="fa fa-phone" href="tel:+1 (908) 432-9369"></a></li><!--
+        --></div>
+                <!-- <div class="buttons">
+                    <li><a href="https://github.com/jiffipop"><img src="icons/github-logo.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/jeffreyalanhouston/"><img src="icons/linkedin-logo.png"></a></li>
+                    <li><a href="mailto:jehousto@syr.edu"><img src="icons/email-logo.png"></a></li>
+                    <li><a href="tel:+1 (908) 432-9369"><img src="icons/phone-logo.png"></a></li>
+                </div> -->
+        <div class="summary">
+            <li><a href="index.html">Home</a></li><!-- 
+            --><li><a href="starry_station.html">Starry Station</a></li><!-- 
+            --><li><a href="research.html">Exoskeleton Research</a></li><!-- 
+            --><li><a href="midi_controller.html">MIDI Controller</a></li><!-- 
+            --><li><a href="senior_design.html">Senior Design</a></li><!-- 
+            --><li><a href="curriculum.html">Curriculum</a></li><!-- 
+            --><li><a href="contact.html">Contact</a></li><!-- 
+        --></div>
+    </footer>
 <!-- footer end -->
 
 </body>

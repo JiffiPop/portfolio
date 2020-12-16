@@ -6,6 +6,7 @@ https://www.w3schools.com/howto/howto_css_parallax.asp
 https://www.quora.com/How-do-you-insert-an-invisible-character-in-HTML
 https://stackoverflow.com/questions/36679649/how-to-add-a-color-overlay-to-a-background-image
 https://codepen.io/sosuke/pen/Pjoqqp -- filter generator to target hex color
+https://www.w3schools.com/icons/icons_reference.asp -- Google, and Awesome 4, Awesome 5 fonts
 
 
 IMAGES:

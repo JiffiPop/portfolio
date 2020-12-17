@@ -492,7 +492,7 @@
         display: inline-block;
         padding: 2px 10px;
         text-align: center;
-        border-right: 1px solid rgb(80, 80, 80);
+        border-right: 1px solid rgb(153, 153, 153);
     }
     footer div.summary li:last-child {
         border-right: 0px;
@@ -521,17 +521,21 @@
         text-align: center;
         text-decoration: none;
         border-radius: 50%;
-        background-color: black;
+        background-color: rgb(139, 139, 139);
         color: white;
-        /* stroke: blue;
-        stroke-width: 2px; */
         transition: background-color 0.15s ease-out;
     }
     .fa:link, .fa:visited {
-        background-color: black;
-        color: white;
+        /* background-color: black; */
+        background-color: rgb(211, 211, 211);
+        color: rgb(0, 0, 0);
     }
     .fa:hover {
+        padding: 5px;
+        font-size: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: 3px solid rgb(204, 204, 204);
         color: rgb(18, 133, 228);
         background-color: rgb(235, 235, 235);
     }

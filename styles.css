@@ -48,6 +48,8 @@
     src: url(fonts/WorkSans-Variable.ttf);
     }
 
+    
+
 /* overall background */
     body {      
         background: rgb(255, 255, 255);
@@ -169,10 +171,10 @@
     }
 
     nav ul li.logo a:hover {
-        color: rgb(202, 202, 202);
+        color: rgb(168, 168, 168);
     }
     nav ul li.logo a:active {
-        color: rgba(18, 133, 228, 0.438);
+        color: rgb(109, 109, 109);
     }
 
     nav ul li.logo a {
@@ -181,11 +183,11 @@
         padding-right: 20px;
         text-transform: none;
         font-family: WorkSans,'Helvetica-Black-Oblique','IBM-Plex-Sans-Light','Century Gothic','CenturyGothic','AppleGothic','sans-serif';
-        /* font-weight: 500; */
-        color: rgb(63, 70, 90);
         font-size: 28px;
         letter-spacing: -2px;
-        transition: color 0.2s ease-out;
+        /* font-weight: 500; */
+        color: rgb(32, 32, 32);
+        transition: color 0.2s ease-in-out;
     }
 
         /* only req'd for using image as logo */
@@ -524,6 +526,7 @@
         background-color: rgb(139, 139, 139);
         color: white;
         transition: background-color 0.15s ease-out;
+        transition: color 0.15s ease-in-out;
     }
     .fa:link, .fa:visited {
         /* background-color: black; */
@@ -531,16 +534,18 @@
         color: rgb(0, 0, 0);
     }
     .fa:hover {
+        /* border-radius: 50%; */
+        color: rgb(18, 133, 228);
+        background-color: rgb(202, 202, 202);
+    }
+    .fa:active {
+        transition: background-color 0.15s ease-out;
         padding: 5px;
         font-size: 20px;
         width: 20px;
-        border-radius: 50%;
+        color: rgb(158, 158, 158);
         border: 3px solid rgb(204, 204, 204);
-        color: rgb(18, 133, 228);
         background-color: rgb(235, 235, 235);
-    }
-    .fa:active {
-        background-color: rgb(202, 202, 202);
     }
 
     /* footer li img {
@@ -553,7 +558,7 @@
     footer div.summary li a:link, footer div.summary li a:visited {
         color: rgb(0, 0, 0);
         text-decoration: none;
-        transition: color 0.15s ease-out;
+        transition: color 0.15s ease-in-out;
     }
     /* footer div li a img:hover {
         filter: invert(0.6);
@@ -569,7 +574,7 @@
         filter: invert(0.25)
     } */
     footer div.summary li a:active {
-        color: rgb(82, 82, 82);
+        color: rgb(158, 158, 158);
         text-decoration: none;
     }
 

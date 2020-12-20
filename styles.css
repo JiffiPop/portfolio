@@ -355,6 +355,12 @@
         font-weight: 800;
         color: rgb(61, 68, 73);
         margin: 0px;
+        padding: 10px 0px;
+    }
+    @media only screen and (max-width: 1200px) {
+        h1 {
+            padding-top: 0px;
+        }
     }
 
     h2 {
@@ -364,6 +370,7 @@
         color: rgb(105, 115, 124);
         margin: 0px;
         margin-top: 4px;
+        padding-top: 20px;
     }
 
     h3 {

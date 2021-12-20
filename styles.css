@@ -48,7 +48,10 @@
     src: url(fonts/WorkSans-Variable.ttf);
     }
 
-    
+@font-face {
+    font-family: cmu-classical-serif-italic;
+    src: url(fonts/cmu/cmu.classical-serif-italic.ttf);
+    }
 
 /* overall background */
     body {      
@@ -182,8 +185,8 @@
         padding: 22px 10px;
         padding-right: 20px;
         text-transform: none;
-        font-family: WorkSans,'Helvetica-Black-Oblique','IBM-Plex-Sans-Light','Century Gothic','CenturyGothic','AppleGothic','sans-serif';
-        font-size: 28px;
+        font-family: cmu-classical-serif-italic, WorkSans,'Helvetica-Black-Oblique','IBM-Plex-Sans-Light','Century Gothic','CenturyGothic','AppleGothic','sans-serif';
+        font-size: 32px;
         letter-spacing: -2px;
         /* font-weight: 500; */
         color: rgb(32, 32, 32);

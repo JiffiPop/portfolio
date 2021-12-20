@@ -528,15 +528,16 @@
     .fa {
         margin: auto;
         padding: 8px;
-        font-size: 20px;
+        font-size: 18px;
         width: 20px;
         text-align: center;
         text-decoration: none;
         border-radius: 50%;
         background-color: rgb(139, 139, 139);
         color: white;
-        transition: background-color 0.15s ease-out;
-        transition: color 0.15s ease-in-out;
+        /* transition: background-color 0.15s ease-in-out;
+        transition: color 0.15s ease-in-out; */
+        transition: all 0.15s ease-in-out;
     }
     .fa:link, .fa:visited {
         /* background-color: black; */
@@ -546,16 +547,17 @@
     .fa:hover {
         /* border-radius: 50%; */
         color: rgb(18, 133, 228);
-        background-color: rgb(202, 202, 202);
+        background-color: rgb(221, 221, 221);
     }
     .fa:active {
-        transition: background-color 0.15s ease-out;
-        padding: 5px;
-        font-size: 20px;
-        width: 20px;
-        color: rgb(158, 158, 158);
-        border: 3px solid rgb(204, 204, 204);
-        background-color: rgb(235, 235, 235);
+        /* transition: background-color 0.10s ease-in-out; */
+        transition: all 0.15s ease-in-out;
+        /* padding: 5px; */
+        /* font-size: 20px;
+        width: 20px; */
+        color: rgb(12, 89, 151);
+        /* border: 3px solid rgb(204, 204, 204);
+        background-color: rgb(235, 235, 235); */
     }
 
     /* footer li img {
@@ -584,7 +586,7 @@
         filter: invert(0.25)
     } */
     footer div.summary li a:active {
-        color: rgb(158, 158, 158);
+        color: rgb(12, 89, 151);
         text-decoration: none;
     }
 

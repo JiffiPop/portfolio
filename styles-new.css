@@ -53,6 +53,17 @@
     src: url(fonts/Velvetyne\ fr/Steps-Mono-Thin.otf);
     }
 
+@font-face {
+    font-family: Minipax-Regular;
+    src: url(fonts/Velvetyne\ fr/Minipax/Minipax-Regular.ttf);
+    }
+
+@font-face {
+    font-family: Minipax-Bold;
+    src: url(fonts/Velvetyne\ fr/Minipax/Minipax-Bold.ttf);
+    }
+    
+
 
 @font-face {
     font-family: WorkSans;
@@ -137,14 +148,14 @@
         text-decoration: none;
         list-style: none;
         display: block;
-        transition: color 0.3s;
+        /* transition: color 0.3s; */
             /* height of top link buttons   */
             padding: 40px 20px 40px 20px;
     }
 
     nav ul li a:hover {
         color: rgb(131, 135, 158);
-        transition: color 0.2s;
+        /* transition: color 0.2s; */
     }
 
     nav ul li ul {
@@ -186,10 +197,12 @@
     }
 
     nav ul li.logo a:hover {
-        color: rgb(168, 168, 168);
+        color: rgb(245, 0, 245);
+        background: rgb(0, 0, 0);
+        border-radius: 8px;
     }
     nav ul li.logo a:active {
-        color: rgb(109, 109, 109);
+        color: rgb(255, 255, 255);
     }
 
     nav ul li.logo a {
@@ -202,7 +215,7 @@
         letter-spacing: -2px;
         /* font-weight: 500; */
         color: rgb(32, 32, 32);
-        transition: color 0.2s ease-in-out;
+        transition: color 0.02s ease-in-out;
     }
 
         /* only req'd for using image as logo */
@@ -338,7 +351,9 @@
 
     section.juicy-content {
         background-color: rgb(245, 245, 245);
-        font-family: WorkSans, IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-family: Minipax-Regular, WorkSans, IBM-Plex-Sans-Regular,'Source Code Pro',sans-serif;
         font-size: 18px;
         line-height: 32px;
         
@@ -364,9 +379,8 @@
 
     h1 {
         text-align: left;
-        font-family: IBM-Plex-Sans-Medium,'Source Code Pro',sans-serif;
+        font-family: WorkSans, IBM-Plex-Sans-Medium,'Source Code Pro',sans-serif;
         font-weight: 800;
-        color: rgb(61, 68, 73);
         margin: 0px;
         padding: 10px 0px;
     }
@@ -391,7 +405,6 @@
         font-family: WorkSans, IBM-Plex-Sans-Medium,'Source Code Pro',sans-serif;
         font-weight: 800;
         font-size: larger;
-        color: rgb(61, 68, 73);
     }
 
     @media only screen and (max-width: 1200px) {
@@ -547,27 +560,23 @@
         color: white;
         /* transition: background-color 0.15s ease-in-out;
         transition: color 0.15s ease-in-out; */
-        transition: all 0.15s ease-in-out;
+        transition: all 0.015s ease-in-out;
     }
     .fa:link, .fa:visited {
         /* background-color: black; */
-        background-color: rgb(211, 211, 211);
-        color: rgb(0, 0, 0);
+        background-color: rgb(0, 0, 0);
+        color: rgb(219, 219, 219);
     }
     .fa:hover {
         /* border-radius: 50%; */
-        color: rgb(18, 133, 228);
-        background-color: rgb(221, 221, 221);
+        color: rgb(174, 0, 255);
     }
     .fa:active {
-        /* transition: background-color 0.10s ease-in-out; */
-        transition: all 0.15s ease-in-out;
+        transition: all 0.015s ease-in-out;
+        color: rgb(255, 255, 255);
         /* padding: 5px; */
         /* font-size: 20px;
         width: 20px; */
-        color: rgb(12, 89, 151);
-        /* border: 3px solid rgb(204, 204, 204);
-        background-color: rgb(235, 235, 235); */
     }
 
     /* footer li img {
@@ -580,7 +589,7 @@
     footer div.summary li a:link, footer div.summary li a:visited {
         color: rgb(0, 0, 0);
         text-decoration: none;
-        transition: color 0.15s ease-in-out;
+        transition: color 0.015s ease-in-out;
     }
     /* footer div li a img:hover {
         filter: invert(0.6);
@@ -588,15 +597,18 @@
     footer div.summary li a:hover {
         /* color: rgb(226, 104, 82); */
         /* color: rgb(167, 167, 167); */
-        color: rgb(18, 133, 228);
+        color: rgb(195, 0, 255);
         text-decoration: none;
+        border-radius: 5px;
+        background-color: black;
+
     }
 
     /* footer div li a img:active {
         filter: invert(0.25)
     } */
     footer div.summary li a:active {
-        color: rgb(12, 89, 151);
+        color: rgb(255, 255, 255);
         text-decoration: none;
     }
 

@@ -1,5 +1,6 @@
 
 /* import font families */
+
 @font-face {
     font-family: IBM-Plex-Sans-Medium;
     src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf);
@@ -33,6 +34,8 @@
     src: url(fonts/IBM_Plex_Sans/IBMPlexSans-Light.ttf);
     }
 
+
+
 @font-face {
     font-family: Helvetica-Black-Oblique;
     src: url(fonts/Helvetica-Black-Oblique.woff);
@@ -63,6 +66,19 @@
     font-family: cmu-classical-serif-italic;
     src: url(fonts/cmu/cmu.classical-serif-italic.ttf);
     }
+
+
+    
+@font-face {
+    font-family: Jost-300-LightItalic;
+    src: url(fonts/Jost/Jost-300-LightItalic.ttf);
+    }
+
+@font-face {
+    font-family: Jost-300-LightItalic;
+    src: url(fonts/Jost/Jost-300-LightItalic.ttf);
+    }
+
 
 
 /* overall background */
@@ -186,20 +202,22 @@
     }
 
     nav ul li.logo a:hover {
-        color: rgb(168, 168, 168);
+        color: rgb(13, 230, 187);
     }
     nav ul li.logo a:active {
-        color: rgb(109, 109, 109);
+        color: rgb(147, 147, 147);
     }
 
+/* WEBSITE TITLE */
     nav ul li.logo a {
         width: fit-content;
         padding: 22px 10px;
         padding-right: 20px;
         text-transform: none;
-        font-family: Steps-Mono,'Helvetica-Black-Oblique','Century Gothic','CenturyGothic','AppleGothic','sans-serif';
+        font-family: 'Helvetica-Black-Oblique','Century Gothic','CenturyGothic','AppleGothic','sans-serif';
         font-size: 32px;
-        letter-spacing: -2px;
+        font-stretch: extra-expanded;
+        /* letter-spacing: -2px; */
         /* font-weight: 500; */
         color: rgb(32, 32, 32);
         transition: color 0.2s ease-in-out;
